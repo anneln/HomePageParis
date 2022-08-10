@@ -1,0 +1,202 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px; 
+    max-width: 1250px;   
+}
+span {
+    border-bottom: 3px solid #457B9D;
+}
+
+h2, h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-shadow: 1px 1px 4px black;
+}
+
+p{
+    font-weight: 100;
+}
+
+/* first part */
+
+/*hero img */
+
+img {
+    width: 100px;
+}
+
+.hero {
+    position: relative;
+    background-image: url('images/parisview.jpg');
+    background-size: cover;  
+    color: aliceblue;
+    padding: 3em 0.8em; 
+    box-shadow: 0px 4px 5px #457B9D;
+}
+
+.hero h1 {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px 18px;
+    border-radius: 10px;
+    font-size: 2rem;
+    line-height: 37px;
+    background: #1D3557;
+    margin: 1em; 
+}
+
+.hero h2{
+    background: #457B9D;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 10px;     
+}
+
+/* second part : activities*/
+.paris-activities {
+    background: #1D3557;
+    padding-top: 1em;
+    color:aliceblue;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5em;  
+}
+
+.activities img {
+    border-radius: 50%;
+    width: 100px;
+    height: 99px;
+}
+
+.rounded-img:hover{
+    transition: transform .2s;
+}
+
+.items{
+    padding: 1.5em;
+    margin: 0 1.5em;
+}
+
+.items img:hover {
+    transform: scale(2.5);
+    transition: 1.5s;
+    cursor: zoom-in;
+}
+
+/* third part : card */
+
+.giphy-embed {
+    display:none;
+}
+
+.card { 
+    position: relative;
+    width: 90%;
+    margin: 4em auto;
+    padding: auto;
+    background: #457B9D;
+    color: aliceblue;
+    border-radius: 10px;
+    border-bottom: 5px solid #1D3557;
+    box-shadow: 1px 2px 3px black;
+}
+
+#ahb-img {
+    width: 50%;
+    border-radius: 10px;
+    margin: .8em;
+}
+
+#ahb-infos{
+    padding: .5em;
+    margin-top: 0;
+}
+
+#ahb-infos p{
+    font-style: italic;
+}
+
+#ahb-infos h3 h4 {
+    font-weight: bold;
+}
+
+/*footer */
+footer {
+    margin-top: 1em;
+}
+a {
+    color: #1D3557;
+}
+
+a:hover {
+    color: #457B9D;
+}
+/* for large screen */
+@media(min-width: 600px){
+    .hero {
+        height: 343px;
+        padding-top: 5em;
+    }
+    
+   .head-title{ 
+    width: 60%;
+    margin: 0 auto;
+    }
+    
+    .hero h2 {
+        margin-top: 3em;
+    }
+    
+    .img{
+        width: 100%;
+    }
+    
+    .activities {
+        height: 343px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;    
+    }
+    
+    .card-section {
+        height: 343px;
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: space-between;
+    }
+    
+    .card {
+        display:flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+    
+    .giphy-embed {
+        display:block;
+    }
+    
+    #ahb-infos{
+        width: 70%;
+    }
+    
+}
